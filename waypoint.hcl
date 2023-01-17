@@ -21,9 +21,9 @@ app "nginx" {
         create_group = true
         // region = "eu-central-1"
       }
-      alb {
-        domain_name = "nginx.dev.promptly.intranet"
-      }
+      // alb {
+      //   domain_name = "nginx.dev.promptly.intranet"
+      // }
       assign_public_ip = false
     }
   }
