@@ -4,6 +4,7 @@ app "nginx" {
     use "docker-pull" {
       image = "nginx"
       tag = "latest"
+      disable_entrypoint = true
     }
   }
   deploy {
