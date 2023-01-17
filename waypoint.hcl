@@ -19,7 +19,7 @@ app "nginx" {
       region = "eu-central-1"
       logging {
         create_group = true
-        region = "eu-central-1"
+        // region = "eu-central-1"
       }
       alb {
         domain_name = "nginx.dev.promptly.intranet"
