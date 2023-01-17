@@ -26,7 +26,9 @@ app "nginx" {
     //   }
     //   assign_public_ip = false
     // }
-    use "docker" {}
+    use "docker" {
+      local = true
+    }
   }
   release {}
 }
