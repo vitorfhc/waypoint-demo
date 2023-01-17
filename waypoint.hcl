@@ -1,10 +1,9 @@
 project = "waypoint-demo"
 app "nginx" {
   build {
-    use "docker-pull" {
+    use "docker-ref" {
       image = "nginx"
       tag = "latest"
-      disable_entrypoint = true
     }
   }
   deploy {
