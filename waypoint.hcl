@@ -5,7 +5,6 @@ app "nginx" {
       image = "nginx"
       tag = "latest"
     }
-    registry {}
   }
   deploy {
     use "aws-ecs" {
