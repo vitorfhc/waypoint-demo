@@ -14,7 +14,7 @@ app "nginx" {
         "subnet-0aba49262d126aab0",
         "subnet-00e51167023575c41"
       ]
-      memory = "512"
+      memory = 512
       cpu = 512
       region = "eu-central-1"
       logging {
