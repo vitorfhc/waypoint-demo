@@ -1,13 +1,11 @@
 project = "waypoint-demo"
 app "nginx" {
   build {
-    use "docker" {}
-    registry {
-      use "docker" {
-        tag   = "latest"
-        image = "nginx"
-      }
+    use "docker-pull" {
+      image = "nginx"
+      tag = "latest"
     }
+    registry {}
   }
   deploy {
     use "aws-ecs" {
