@@ -1,9 +1,11 @@
 project = "waypoint-demo"
 app "nginx" {
   build {
-    use "docker-pull" {
-      tag   = "latest"
-      image = "nginx"
+    registry {
+      use "docker" {
+        tag   = "latest"
+        image = "nginx"
+      }
     }
   }
   deploy {
