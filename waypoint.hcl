@@ -1,6 +1,7 @@
 project = "waypoint-demo"
 app "nginx" {
   build {
+    use "docker-pull" {}
     registry {
       use "docker" {
         tag   = "latest"
